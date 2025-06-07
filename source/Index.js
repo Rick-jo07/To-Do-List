@@ -25,7 +25,7 @@ app.use(errorHandler)
 app.use(morgan('dev'));
 app.use('/api/auth', authRoutes);    // ✅ Auth route
 app.use('/api/todos', router)
-const port = process.env.PORT
+const port = process.env.PORT || 8080;
 
 app.listen(port, () => {
     console.log(port)
