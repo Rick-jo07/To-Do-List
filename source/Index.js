@@ -1,9 +1,9 @@
 import dotenv from 'dotenv'
 import express from 'express'
 import cors from 'cors'
-import router from '../source/routes/TodoRoutes.js'
-import { errorHandler } from '../source/middleware/errorHandler.js'
-import authRoutes from '../source/routes/authRoutes.js'
+import router from './routes/TodoRoutes.js'
+import { errorHandler } from './middleware/errorHandler.js'
+import authRoutes from './routes/authRoutes.js'
 import morgan from 'morgan'
 import session from 'express-session'
 
