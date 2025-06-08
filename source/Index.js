@@ -21,6 +21,10 @@ app.use(
       },
     })
   );  
+
+  app.get('/', (req, res) => {
+    res.send('API is running 🚀');
+  });
 app.use(errorHandler)
 app.use(morgan('dev'));
 app.use('/api/auth', authRoutes);    // ✅ Auth route
